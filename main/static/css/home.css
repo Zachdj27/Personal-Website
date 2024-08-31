@@ -1,8 +1,8 @@
 .main-container {
-  max-width: 860px; /* Set maximum width for content alignment */
-  margin: 0 auto; /* Center container horizontally */
-  padding: 0 20px; /* Add padding to the sides if needed */
-  box-sizing: border-box; /* Include padding and border in width */
+  max-width: 860px; 
+  margin: 0 auto; 
+  padding: 0 20px; 
+  box-sizing: border-box; 
   justify-content: left;
 }
 
@@ -12,7 +12,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  box-sizing: border-box; /* Include padding and border in width */
+  box-sizing: border-box;
   margin-top: 50px;
   margin-bottom: 28px;
 }
@@ -49,7 +49,7 @@
 
 /* Filters Section */
 .filters {
-  background-color: #ffffff; /* Keep white for a clean look */
+  background-color: #ffffff; 
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -61,12 +61,12 @@
 /* Project Cards */
 .filters, .project {
   max-width: 800px;
-  margin: 20px auto; /* Centered and consistent width */
+  margin: 20px auto; 
 }
 
 .project {
-  display: flex; /* Align image and content side by side */
-  align-items: center; /* Vertically center the content */
+  display: flex; 
+  align-items: center; 
   padding: 20px;
   background-color: #ffffff;
   border-radius: 10px;
@@ -75,18 +75,19 @@
 }
 
 .project img {
-  max-width: 100px; /* Further reduce image width */
-  max-height: 100px; /* Ensure a consistent height */
-  border-radius: 5px; /* Optional: rounded corners for images */
-  margin-right: 20px; /* Space between image and text content */
-  object-fit: cover; /* Ensure the image maintains its aspect ratio */
+  max-width: 22%; 
+  max-height: 25%; 
+  border-radius: 5px; 
+  margin-right: 20px; 
+  object-fit: cover;
+  border: 0.5px solid #555;
 }
 
 .project-content {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Center content vertically within the space */
-  flex: 1; /* Allow text content to take up remaining space */
+  justify-content: center; 
+  flex: 1; 
 }
 
 .project:hover {
@@ -96,7 +97,7 @@
 
 .project h2 {
   margin-top: 0;
-  margin-bottom: 10px; /* Space between title and description */
+  margin-bottom: 10px; 
   color: #007bff;
 }
 
@@ -128,30 +129,31 @@
 
   .project img {
       margin-right: 0;
-      margin-bottom: 15px; /* Add space below the image on smaller screens */
+      margin-bottom: 15px; 
   }
 }
 
 
 #name-search {
   padding: 10px;
-  width: 100%; /* Restore full width */
+  width: 100%; 
   border: 1px solid #ccc;
   border-radius: 5px;
-  height: 35px; /* Original height */
-  font-size: 1em; /* Original font size */
+  height: 35px; 
+  font-size: 1em; 
   margin-bottom: 15px;
 }
 
 .tag {
-  background-color: #0c6cd3; /* Matching button color */
+  background-color: #0c6cd3; 
   color: white;
   border: none;
-  padding: 8px 15px; /* Original padding */
-  border-radius: 5px; /* Less rounded buttons */
+  padding: 8px 15px; 
+  border-radius: 5px; 
   cursor: pointer;
   transition: background-color 0.3s ease;
   font-size: 0.9em;
+  margin-top: 4.5px;
 }
 
 .tag:hover {
