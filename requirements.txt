@@ -133,6 +133,7 @@ webcolors==1.13
 webencodings==0.5.1
 websocket-client==1.8.0
 Werkzeug==3.0.3
+whitenoise==6.7.0
 widgetsnbextension==4.0.10
 yarg==0.1.9
 zipp==3.18.1
