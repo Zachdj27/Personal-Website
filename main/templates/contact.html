@@ -1,0 +1,25 @@
+{% extends 'base.html'%}
+{% load static %}
+
+{% block title %}
+Contact Page
+{% endblock title %}
+
+{% block extrahead %}
+<link rel="stylesheet" href="{% static 'css/contact.css' %}">
+{% endblock extrahead %}
+
+
+{% block content %}
+    <div class="contact-container">
+        <h1>Contact Me</h1>
+        <p>               
+            <ul class="icons">
+                <li><a href="https://www.linkedin.com/in/zachary-djerdjouri-902142212/" target="_blank"><i class="fa fa-linkedin"></i>Zachary Djerdjouri</a></li>
+                <li><a href="https://github.com/Zachdj27" target="_blank"><i class="fa fa-github"></i>Zachdj27</a></li>
+                <li><a href="mailto:zdjer050@uottawa.ca" target="_blank"><i class="fa fa-envelope"></i>zdjer050@uottawa.ca</a></li>
+            <li><a href="{% static 'resume/DJERDJOURI_ZACHARY_RESUME.pdf' %}" target="_blank">View My Resume</a></li>
+            </ul>
+        </p>
+    </div>
+{% endblock content %}

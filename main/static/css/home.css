@@ -1,0 +1,159 @@
+.main-container {
+  max-width: 860px; /* Set maximum width for content alignment */
+  margin: 0 auto; /* Center container horizontally */
+  padding: 0 20px; /* Add padding to the sides if needed */
+  box-sizing: border-box; /* Include padding and border in width */
+  justify-content: left;
+}
+
+.intro-section {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box; /* Include padding and border in width */
+  margin-top: 50px;
+  margin-bottom: 28px;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-right: 20px;
+  object-fit: cover;
+}
+
+.profile-info h1 {
+  margin: 0;
+  font-size: 2.0em;
+}
+
+.intro-description {
+  font-size: 1.3em;
+  color: #555;
+  margin-top: 8px;
+  text-align: justify;
+}
+
+.icons {
+  margin-top: 6.5px;
+  font-size: 1.4em;
+}
+
+.about-me-text {
+  font-size: 1.05em;
+  line-height: 23px;
+}
+
+/* Filters Section */
+.filters {
+  background-color: #ffffff; /* Keep white for a clean look */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+/* Project Cards */
+.filters, .project {
+  max-width: 800px;
+  margin: 20px auto; /* Centered and consistent width */
+}
+
+.project {
+  display: flex; /* Align image and content side by side */
+  align-items: center; /* Vertically center the content */
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.project img {
+  max-width: 100px; /* Further reduce image width */
+  max-height: 100px; /* Ensure a consistent height */
+  border-radius: 5px; /* Optional: rounded corners for images */
+  margin-right: 20px; /* Space between image and text content */
+  object-fit: cover; /* Ensure the image maintains its aspect ratio */
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically within the space */
+  flex: 1; /* Allow text content to take up remaining space */
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 20px rgba(0, 0, 0, 0.15);
+}
+
+.project h2 {
+  margin-top: 0;
+  margin-bottom: 10px; /* Space between title and description */
+  color: #007bff;
+}
+
+.project p {
+  margin: 0;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .intro-section {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .profile-pic {
+      margin-bottom: 15px;
+      margin-right: 0;
+  }
+
+  .tags-list {
+      flex-direction: column;
+  }
+
+  .project {
+      flex-direction: column;
+  }
+
+  .project img {
+      margin-right: 0;
+      margin-bottom: 15px; /* Add space below the image on smaller screens */
+  }
+}
+
+
+#name-search {
+  padding: 10px;
+  width: 100%; /* Restore full width */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: 35px; /* Original height */
+  font-size: 1em; /* Original font size */
+  margin-bottom: 15px;
+}
+
+.tag {
+  background-color: #0c6cd3; /* Matching button color */
+  color: white;
+  border: none;
+  padding: 8px 15px; /* Original padding */
+  border-radius: 5px; /* Less rounded buttons */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 0.9em;
+}
+
+.tag:hover {
+  background-color: #0056b3;
+}

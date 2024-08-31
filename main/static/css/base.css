@@ -1,0 +1,107 @@
+/* Base CSS */
+body {
+  font-family: 'Palatino', sans-serif;
+  background-color: #ffffff; 
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Palatino", sans-serif;
+  }
+  
+
+a {
+    color: #0056b3;; 
+    text-decoration: none;
+}
+
+a:hover {
+    color: #003d80; 
+}
+  
+
+/* Header and Navigation Menu */
+header {
+  background-color: #0056b3; 
+  color: white;
+  padding: 10px 20px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+/* Navigation menu styling */
+.nav-menu {
+  list-style: none;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  margin: 0;
+  padding: 0;
+  font-size: 19px;
+}
+
+/* Left-aligned items */
+.nav-menu .left-group {
+  display: flex;
+  gap: 14px; /* Space between social icons */
+}
+
+/* Right-aligned items */
+.nav-menu .right-group {
+  display: flex;
+  gap: 14px; /* Space between links */
+}
+
+/* Navigation menu items */
+.nav-menu li {
+  text-align: left; 
+}
+
+.nav-menu a {
+  color: white;
+  transition: color 0.3s ease;
+  padding: 10px 15px; 
+  text-decoration: none;
+}
+
+.nav-menu a:hover {
+  color: #d1eaff;
+}
+
+/* Icon styling */
+.nav-menu i {
+  font-size: 24px; 
+}
+
+
+  /* Main Content Area */
+  main {
+    margin-top: 20px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .nav-menu {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .left-group {
+      margin-right: 22%;
+    }
+    .right-group {
+      margin-left: 19%;
+    }
+  }
+
